@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/ic_splash_bg"
+    tools:context=".SplashActivity">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:paddingStart="15dp"
+        android:paddingEnd="0dp"
+        android:paddingBottom="60dp"
+        android:gravity="center"
+        android:orientation="vertical">
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/gifTextView_ic_bl"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_marginStart="-18dp"
+            android:layout_marginBottom="-60dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/ic_splash_plnt"
+            app:lottie_speed="0.5" />
+
+
+        <ImageView
+            android:layout_width="128dp"
+            android:layout_height="80dp"
+            android:elevation="1dp"
+            android:src="@drawable/ic_fyta_splash_text" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/gifTextView_ic_bluetooth"
+            android:layout_width="12dp"
+            android:layout_height="12dp"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="-35dp"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="true"
+            app:lottie_rawRes="@raw/ic_dot_splash" />
+
+        <com.airbnb.lottie.LottieAnimationView
+            android:id="@+id/gifTextView_ic_th"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_marginStart="-18dp"
+            android:layout_marginTop="1dp"
+            android:layout_marginBottom="100dp"
+            android:rotation="180"
+            app:lottie_autoPlay="true"
+            app:lottie_loop="false"
+            app:lottie_rawRes="@raw/ic_roots"
+            app:lottie_speed="0.8" />
+
+
+    </LinearLayout>
+
+
+
+</RelativeLayout>

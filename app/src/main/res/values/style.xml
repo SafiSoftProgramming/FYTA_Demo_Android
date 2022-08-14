@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <style name="ShapeAppearanceOverlay.App.SelectedCornerRadius" parent="">
+        <item name="cornerSizeTopRight">50dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">50dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+
+
+    <style name="Gardens_list_carve" parent="">
+        <item name="cornerSizeTopRight">20dp</item>
+        <item name="cornerFamilyTopRight">rounded</item>
+        <item name="cornerSizeTopLeft">20dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+
+
+    <style name="Gardens_live_mode" parent="">
+        <item name="cornerSizeBottomRight">50dp</item>
+        <item name="cornerFamilyBottomRight">rounded</item>
+        <item name="cornerSizeBottomLeft">50dp</item>
+        <item name="cornerFamilyBottomLeft">rounded</item>
+    </style>
+
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="fyta">#0A3D2C</color>
+    <color name="brown_bg">#0A3D2C</color>
+    <color name="purple_700">#0A3D2C</color>
+    <color name="teal_200">#FF000000</color>
+    <color name="teal_700">#FF000000</color>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFF</color>
+    <color name="neon">#33FF00</color>
+    <color name="gray">#757575</color>
+</resources>

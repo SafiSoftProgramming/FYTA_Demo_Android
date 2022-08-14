@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="DesignSurface">
+    <option name="filePathToZoomLevelMap">
+      <map>
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable-v24/btn_eff_shop_more_info.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_add_to_gardens.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_edit_plant.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_forgot_pass.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_health.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_identify_plant.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_library_fyta.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_library_list_more.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_login.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_more_info_plant.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_ph.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_plant_health.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_privacy_small.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_shop_add_cart.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_shop_more_info.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_signup_facebook.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_signup_fyta.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_signup_google.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_terms.xml" value="0.321" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_terms_small.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/drawable/btn_eff_the_list.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_connect.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_fyta.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_gardens.xml" value="0.3255208333333333" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_gardenss.xml" value="0.14010416666666667" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_home.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_library.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_live_mode.xml" value="0.2833333333333333" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_login.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_notification.xml" value="0.5" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_register.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_settings.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_shop.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_splash.xml" value="0.25" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_water_mark_share_post_ad.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_web_view.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/activity_workout_history.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/gardens_header.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/gardens_list.xml" value="0.33" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/home_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/library_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/login_info_dialog.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/notification_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/notification_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/profile_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/profile_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/snack_bar_info.xml" value="0.3458333333333333" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/to_make_image_corners_rounded.xml" value="0.35260416666666666" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/workout_history_header.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FYTA_Android/app/src/main/res/layout/workouthistory_list.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable-v24/btn_eff_connect_try.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable-v24/btn_eff_demo_s1.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable-v24/btn_eff_demo_s3.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_connect_try.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s1.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s2.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s3.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s4.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s5.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_demo_s6.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/drawable/btn_eff_tank_live.xml" value="0.2665" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_connect.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_find_bluetooth.xml" value="0.21927083333333333" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_fyta.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_gardens.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_home.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_library.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_live_mode.xml" value="0.4069952305246423" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_login.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_notification.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_profile.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_register.xml" value="0.31197916666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_settings.xml" value="0.5" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_shop.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_signup.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_water_mark_share_post_ad.xml" value="0.36666666666666664" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/activity_web_view.xml" value="0.24635416666666668" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/gardens_header.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/gardens_list.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/home_list.xml" value="0.26458333333333334" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/login_info_dialog.xml" value="0.23854166666666668" />
+        <entry key="..\:/Users/mostz/Desktop/FytaProject/FYTA_Androidd/FYTA_Android/app/src/main/res/layout/profile_list.xml" value="0.36666666666666664" />
+      </map>
+    </option>
+  </component>
+  <component name="ProjectRootManager" version="2" languageLevel="JDK_11" default="true" project-jdk-name="Android Studio default JDK" project-jdk-type="JavaSDK">
+    <output url="file://$PROJECT_DIR$/build/classes" />
+  </component>
+  <component name="ProjectType">
+    <option name="id" value="Android" />
+  </component>
+</project>

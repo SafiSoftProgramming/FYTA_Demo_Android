@@ -1,0 +1,36 @@
+<resources>
+    <string name="app_name">FYTA</string>
+
+    <string name="scanner_error_message">can\'t scann</string>
+    <string name="Server_URL">http://safisoft.net/fyta/</string>
+
+    <string name="Gym_list_choose_php">gym_nation_all_gyms.php</string>
+
+    <string name="Home_adpost_php">gym_nation_adpost_api.php</string>
+
+    <string name="Member_conn_php">gym_nation_member_api.php</string>
+
+    <string name="Member_search_php">gym_nation_search_member_api.php</string>
+
+    <string name="Notification_php">gym_nation_notification_api.php</string>
+
+
+    <string name="URL_massage">gym_nation_notification_api.php</string>
+    <string name="URL_post">gym_nation_adpost_api.php</string>
+    <string name="URL_membersatgym">gym_nation_member_api.php</string>
+    <string name="URL_workout">gym_nation_workout_history_api.php</string>
+
+    <string name="URL_library">plants_library.php</string>
+    <string name="URL_member_profile">fyta_members.php</string>
+    <string name="URL_members_pic">members_profile_imgs/</string>
+    <string name="URL_gardens">gardens_list.php</string>
+
+
+    <string name="WorkOut_Img_Folder_Name">workout_imgs/</string>
+    <string name="WorkOut_Img_Type">.png</string>
+
+    <string name="Notification_Icons_Folder_Name">notification_icons/</string>
+    <string name="Notification_Icon_Type">.png</string>
+    <string name="facebook_app_id">607218801124012</string>
+    <string name="facebook_client_token">9d07152c66c34983bd0be6335cda2b95</string>
+</resources>
