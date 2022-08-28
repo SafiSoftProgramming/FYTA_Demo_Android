@@ -9,7 +9,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
-import android.database.SQLException;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -107,7 +106,7 @@ public class ProfileActivity extends AppCompatActivity {
         pullToRefresh.setColorSchemeColors(Color.parseColor("#33FF00"));
         pullToRefresh.setProgressBackgroundColorSchemeColor(Color.parseColor("#0E563E"));
 
-        SendReceivedData_notification(Server_URL, URL_MEMBER_PROFILE,gym_database_url());
+        SendReceivedData_notification(Server_URL, URL_MEMBER_PROFILE, fyta_database_url());
 
         gifTextView_conn_status =findViewById(R.id.gifTextView_conn_status);
         img_loading_pic = findViewById(R.id.img_loading_pic);
@@ -138,7 +137,7 @@ public class ProfileActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 ProfileList.clear();
-                SendReceivedData_notification(Server_URL, URL_MEMBER_PROFILE,gym_database_url());
+                SendReceivedData_notification(Server_URL, URL_MEMBER_PROFILE, fyta_database_url());
                 pullToRefresh.setRefreshing(false);
             }
         });
@@ -197,14 +196,14 @@ public class ProfileActivity extends AppCompatActivity {
     }
 
 
-    public void SendReceivedData_notification(final String Server_url,final String php_Search_member_url,final String gym_name) {
+    public void SendReceivedData_notification(final String Server_url,final String php_Search_member_url,final String fyta_name) {
         class SendPostReqAsyncTask extends AsyncTask<String, Void, String> {
             String line ;
             @Override
             protected String doInBackground(String... params) {
                 String Server_URL = Server_url+php_Search_member_url;
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-                nameValuePairs.add(new BasicNameValuePair("gymname", gym_name));
+                nameValuePairs.add(new BasicNameValuePair("fytaname", fyta_name));
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpPost httpPost = new HttpPost(Server_URL);
@@ -292,16 +291,12 @@ public class ProfileActivity extends AppCompatActivity {
             }
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-        sendPostReqAsyncTask.execute(gym_name);
+        sendPostReqAsyncTask.execute(fyta_name);
     }
 
 
 
-    public String gym_database_url(){
-        //   Cursor c = dataBaseConnction.query_user_data("gym_info_local_database",null,null,null,null,null,null);
-        //   c.moveToPosition(0);
-        //   String gym_url = c.getString(3);
-        //   return gym_url ;
+    public String fyta_database_url(){
         return "FYTA"    ;
     }
 

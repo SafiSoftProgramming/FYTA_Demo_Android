@@ -173,7 +173,7 @@ public class GardensAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
                     String Server_URL_link = ServerURL+URL_SEARCH_MEMBER;
                     List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
                     nameValuePairs.add(new BasicNameValuePair("rfid", "2"));
-                    nameValuePairs.add(new BasicNameValuePair("gymname", "FYTA"));
+                    nameValuePairs.add(new BasicNameValuePair("fytaname", "FYTA"));
                     try {
                         HttpClient httpClient = new DefaultHttpClient();
                         HttpPost httpPost = new HttpPost(Server_URL_link);

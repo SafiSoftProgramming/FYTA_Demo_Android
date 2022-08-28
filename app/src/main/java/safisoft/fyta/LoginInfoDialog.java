@@ -16,14 +16,7 @@ public class LoginInfoDialog extends Dialog implements
         View.OnClickListener {
 
     public ImageButton btn_ok_in_dialog, btn_cancel_in_dialog;
-    TextView txtv_command_name ;
-    ImageView imgv_command_pic ;
-    TextView txtv_command_first_head ;
-    EditText edtxt_command_first ;
-    TextView txtv_command_first_des ;
-    TextView txtv_command_second_head ;
-    EditText edtxt_command_second ;
-    TextView txtv_command_second_des ;
+
     public Activity c;
 
     public LoginInfoDialog(@NonNull Activity a) {
@@ -37,16 +30,7 @@ public class LoginInfoDialog extends Dialog implements
         requestWindowFeature(Window.FEATURE_NO_TITLE);
         setContentView(R.layout.login_info_dialog);
        btn_ok_in_dialog = findViewById(R.id.btn_ok_in_dialog);
-//       btn_cancel_in_dialog = findViewById(R.id.btn_cancel_in_dialog);
-//       txtv_command_name = findViewById(R.id.txtv_command_name);
-//       imgv_command_pic =findViewById(R.id.imgv_command_pic);
-//       txtv_command_first_head = findViewById(R.id.txtv_command_first_head);
-//       edtxt_command_first = findViewById(R.id.edtxt_command_first);
-//       txtv_command_first_des = findViewById(R.id.txtv_command_first_des);
-//       txtv_command_second_head = findViewById(R.id.txtv_command_second_head);
-//       edtxt_command_second = findViewById(R.id.edtxt_command_second);
-//       txtv_command_second_des = findViewById(R.id.txtv_command_second_des);
-//
+
 
 
 

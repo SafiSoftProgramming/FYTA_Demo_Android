@@ -101,18 +101,6 @@ public class HomeActivity extends AppCompatActivity {
         URL_ADPOST = getResources().getString(R.string.Home_adpost_php);
 
 
- //      dataBaseConnction = new DataBaseConnction(getApplicationContext());
- //      try {
- //          dataBaseConnction.createDataBase();
- //      } catch (IOException ioe) {
- //          throw new Error("Unable to create database");
- //      }
- //      try {
- //          dataBaseConnction.openDataBase();
- //      } catch (SQLException sqle) {
- //          throw sqle;
- //      }
- //
 
         btn_go_notification = findViewById(R.id.btn_go_notification);
 

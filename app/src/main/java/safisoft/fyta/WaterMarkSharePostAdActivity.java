@@ -2,8 +2,6 @@ package safisoft.fyta;
 
 import android.content.Context;
 import android.content.res.Resources;
-import android.database.Cursor;
-import android.database.SQLException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
 import android.graphics.Canvas;
@@ -15,8 +13,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.ImageButton;
 import android.widget.ImageView;
-import android.widget.LinearLayout;
-import android.widget.Toast;
 
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AppCompatActivity;
@@ -31,8 +27,6 @@ import com.bumptech.glide.request.target.Target;
 import com.facebook.share.model.SharePhoto;
 import com.facebook.share.model.SharePhotoContent;
 import com.facebook.share.widget.ShareDialog;
-
-import java.io.IOException;
 
 public class WaterMarkSharePostAdActivity extends AppCompatActivity {
 
@@ -53,7 +47,7 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
     String Server_URL ;
 
 
-    Bitmap GYM_LOGO ;
+    Bitmap FYTA_LOGO;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -85,7 +79,7 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
 
 
 
-        gymlogo_url_to_bitmap(getApplicationContext(),gym_logo());
+        fyta_logo_url_to_bitmap(getApplicationContext(), fyta_logo());
 
 
 
@@ -126,68 +120,25 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
         RectF r;
         w = source.getWidth();
         h = source.getHeight();
-        // Create the new bitmap
         bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
         paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.FILTER_BITMAP_FLAG);
-        // Copy the original bitmap into the new one
         c = new Canvas(bmp);
         c.drawBitmap(source, 0, 0, paint);
-        // Load the watermark
         watermark = BitmapFactory.decodeResource(res, icon);
-        // Scale the watermark to be approximately 40% of the source image height
         scale = (float) (((float) h * v) / (float) watermark.getHeight());
-        // Create the matrix
+
         matrix = new Matrix();
         matrix.postScale(scale, scale);
-        // Determine the post-scaled size of the watermark
+
         r = new RectF(0, 0, watermark.getWidth(), watermark.getHeight());
         matrix.mapRect(r);
-        // Move the watermark to the bottom right corner
-        //  matrix.postTranslate(w - r.width(), h - r.height());
+
         matrix.postTranslate(w - rw, h - rh);
-        // Draw the watermark
         c.drawBitmap(watermark, matrix, paint);
-        // Free up the bitmap memory
         watermark.recycle();
         return bmp;
     }
 
-
-    public static Bitmap addWatermark_gymlogo(Context context, int rw, int rh , Bitmap source, double v,Bitmap gym_logo) {
-        int w , h ;
-        Canvas c;
-        Paint paint;
-        Bitmap bmp, watermark;
-        Matrix matrix;
-        float scale;
-        RectF r;
-        w = source.getWidth();
-        h = source.getHeight();
-        // Create the new bitmap
-        bmp = Bitmap.createBitmap(w, h, Bitmap.Config.ARGB_8888);
-        paint = new Paint(Paint.ANTI_ALIAS_FLAG | Paint.DITHER_FLAG | Paint.FILTER_BITMAP_FLAG);
-        // Copy the original bitmap into the new one
-        c = new Canvas(bmp);
-        c.drawBitmap(source, 0, 0, paint);
-        // Load the watermark
-        watermark = gym_logo;
-        // Scale the watermark to be approximately 40% of the source image height
-        scale = (float) (((float) h * v) / (float) watermark.getHeight());
-        // Create the matrix
-        matrix = new Matrix();
-        matrix.postScale(scale, scale);
-        // Determine the post-scaled size of the watermark
-        r = new RectF(0, 0, watermark.getWidth(), watermark.getHeight());
-        matrix.mapRect(r);
-        // Move the watermark to the bottom right corner
-        //  matrix.postTranslate(w - r.width(), h - r.height());
-        matrix.postTranslate(w - rw, h - rh);
-        // Draw the watermark
-        c.drawBitmap(watermark, matrix, paint);
-        // Free up the bitmap memory
-        watermark.recycle();
-        return bmp;
-    }
 
 
 
@@ -212,11 +163,11 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
 
 
 
-    public void gymlogo_url_to_bitmap(Context context,String gymlogo_url){
+    public void fyta_logo_url_to_bitmap(Context context, String fyta_logo_url){
 
 
         Glide.with(context).asBitmap().
-                load(gymlogo_url)
+                load(fyta_logo_url)
               //  .apply(new RequestOptions().override(1000, 1000))
                 .apply(RequestOptions.skipMemoryCacheOf(true))
                 .apply(RequestOptions.diskCacheStrategyOf(DiskCacheStrategy.NONE))
@@ -228,7 +179,7 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
                     @Override
                     public boolean onResourceReady(Bitmap resource, Object model, Target<Bitmap> target, DataSource dataSource, boolean isFirstResource) {
 
-                        GYM_LOGO = resource ;
+                        FYTA_LOGO = resource ;
 
                         return true;
                     }
@@ -242,8 +193,7 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
 
 
     public void show_profile_img_and_name_localdatabase(){
-     //   Cursor c = dataBaseConnction.query_user_data("member_data",null,null,null,null,null,null);
-     //   c.moveToPosition(0);
+
 
         if(ADPOST_PROMO_CODE.equals("")){
             ADPOST_PROMO_CODE = "No offer";
@@ -263,15 +213,15 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
                     @Override
                     public boolean onResourceReady(Bitmap resource, Object model, Target<Bitmap> target, DataSource dataSource, boolean isFirstResource) {
 
-                        resource = Bitmap.createScaledBitmap(resource, 1000, 1000, false); // important  to change any image size to w1000 h1000 after crop .
+                        resource = Bitmap.createScaledBitmap(resource, 1000, 1000, false);
 
                         Bitmap green_back_line = addWatermark(getApplicationContext(),1000,300,getResources(),resource,0.30,R.drawable.water_mark_down);
 
                         Bitmap bitmapdown = addWatermark(getApplicationContext(),1000,1000,getResources(),green_back_line,0.30,R.drawable.trans_line);
 
-                        Bitmap gymnation_logo = addWatermark(getApplicationContext(),977,975,getResources(),bitmapdown,0.06,R.drawable.ic_logo_share);
+                        Bitmap fyta_new_logo = addWatermark(getApplicationContext(),977,975,getResources(),bitmapdown,0.06,R.drawable.ic_logo_share);
 
-                        Bitmap ad_name = text_watermark(gymnation_logo,ADPOST_NAME,20,835,40);
+                        Bitmap ad_name = text_watermark(fyta_new_logo,ADPOST_NAME,20,835,40);
 
                         Bitmap promo_code = text_watermark(ad_name,"Promo Code: "+ADPOST_PROMO_CODE,20,880,30);
 
@@ -291,11 +241,8 @@ public class WaterMarkSharePostAdActivity extends AppCompatActivity {
 
 
 
-    public String gym_logo(){
-    //   Cursor c = dataBaseConnction.query_user_data("gym_info_local_database",null,null,null,null,null,null);
-    //   c.moveToPosition(0);
-    //   String gym_logo = c.getString(2);
-    //   return gym_logo ;
+    public String fyta_logo(){
+
         return "my name" ;
     }
 

@@ -9,7 +9,6 @@ import androidx.swiperefreshlayout.widget.SwipeRefreshLayout;
 import android.annotation.TargetApi;
 import android.content.Context;
 import android.content.Intent;
-import android.database.SQLException;
 import android.graphics.Color;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
@@ -24,7 +23,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.RelativeLayout;
 import android.widget.TextView;
-import android.widget.Toast;
 
 import com.airbnb.lottie.LottieAnimationView;
 import com.mikhaellopez.circularimageview.CircularImageView;
@@ -124,12 +122,10 @@ public class GardensActivity extends AppCompatActivity {
         btn_demo3 = findViewById(R.id.btn_demo3);
 
 
-        //initializing the productlist
+
         GardensList = new ArrayList<>();
 
-        //this method will fetch and parse json
-        //to display it in recyclerview
-        SendReceivedData_notification(Server_URL,URL_NOTIFICATION,gym_database_url());
+        SendReceivedData_notification(Server_URL,URL_NOTIFICATION, fyta_database_url());
 
 
 
@@ -242,7 +238,7 @@ public class GardensActivity extends AppCompatActivity {
             @Override
             public void onRefresh() {
                 GardensList.clear();
-                SendReceivedData_notification(Server_URL,URL_NOTIFICATION,gym_database_url());
+                SendReceivedData_notification(Server_URL,URL_NOTIFICATION, fyta_database_url());
                 pullToRefresh.setRefreshing(false);
             }
         });
@@ -253,14 +249,14 @@ public class GardensActivity extends AppCompatActivity {
 
 
 
-    public void SendReceivedData_notification(final String Server_url,final String php_Search_member_url,final String gym_name) {
+    public void SendReceivedData_notification(final String Server_url,final String php_Search_member_url,final String fyta_name) {
         class SendPostReqAsyncTask extends AsyncTask<String, Void, String> {
             String line ;
             @Override
             protected String doInBackground(String... params) {
                 String Server_URL = Server_url+php_Search_member_url;
                 List<NameValuePair> nameValuePairs = new ArrayList<NameValuePair>();
-                nameValuePairs.add(new BasicNameValuePair("gymname", gym_name));
+                nameValuePairs.add(new BasicNameValuePair("fytaname", fyta_name));
                 try {
                     HttpClient httpClient = new DefaultHttpClient();
                     HttpPost httpPost = new HttpPost(Server_URL);
@@ -348,16 +344,12 @@ public class GardensActivity extends AppCompatActivity {
             }
         }
         SendPostReqAsyncTask sendPostReqAsyncTask = new SendPostReqAsyncTask();
-        sendPostReqAsyncTask.execute(gym_name);
+        sendPostReqAsyncTask.execute(fyta_name);
     }
 
 
 
-    public String gym_database_url(){
-        //   Cursor c = dataBaseConnction.query_user_data("gym_info_local_database",null,null,null,null,null,null);
-        //   c.moveToPosition(0);
-        //   String gym_url = c.getString(3);
-        //   return gym_url ;
+    public String fyta_database_url(){
         return "FYTA"    ;
     }
 

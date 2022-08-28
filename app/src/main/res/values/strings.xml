@@ -4,21 +4,21 @@
     <string name="scanner_error_message">can\'t scann</string>
     <string name="Server_URL">http://safisoft.net/fyta/</string>
 
-    <string name="Gym_list_choose_php">gym_nation_all_gyms.php</string>
+    <string name="fyta_list_choose_php">fyta_all.php</string>
 
-    <string name="Home_adpost_php">gym_nation_adpost_api.php</string>
+    <string name="Home_adpost_php">fyta_adpost_api.php</string>
 
-    <string name="Member_conn_php">gym_nation_member_api.php</string>
+    <string name="Member_conn_php">fyta_member_api.php</string>
 
-    <string name="Member_search_php">gym_nation_search_member_api.php</string>
+    <string name="Member_search_php">fyta_search_member_api.php</string>
 
-    <string name="Notification_php">gym_nation_notification_api.php</string>
+    <string name="Notification_php">fyta_notification_api.php</string>
 
 
-    <string name="URL_massage">gym_nation_notification_api.php</string>
-    <string name="URL_post">gym_nation_adpost_api.php</string>
-    <string name="URL_membersatgym">gym_nation_member_api.php</string>
-    <string name="URL_workout">gym_nation_workout_history_api.php</string>
+    <string name="URL_massage">fyta_notification_api.php</string>
+    <string name="URL_post">fyta_adpost_api.php</string>
+    <string name="URL_members_fyta">fyta_member_api.php</string>
+    <string name="URL_workout">fyta_history_api.php</string>
 
     <string name="URL_library">plants_library.php</string>
     <string name="URL_member_profile">fyta_members.php</string>
@@ -26,8 +26,6 @@
     <string name="URL_gardens">gardens_list.php</string>
 
 
-    <string name="WorkOut_Img_Folder_Name">workout_imgs/</string>
-    <string name="WorkOut_Img_Type">.png</string>
 
     <string name="Notification_Icons_Folder_Name">notification_icons/</string>
     <string name="Notification_Icon_Type">.png</string>

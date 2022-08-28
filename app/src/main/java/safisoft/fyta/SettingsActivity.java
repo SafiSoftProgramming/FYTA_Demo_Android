@@ -10,19 +10,13 @@ import android.Manifest;
 import android.app.ProgressDialog;
 import android.content.Intent;
 import android.content.pm.PackageManager;
-import android.database.Cursor;
-import android.database.SQLException;
 import android.graphics.Bitmap;
 import android.graphics.BitmapFactory;
-import android.net.Uri;
 import android.os.AsyncTask;
 import android.os.Bundle;
 import android.util.Base64;
 import android.util.Log;
 import android.view.View;
-import android.widget.Button;
-import android.widget.CheckBox;
-import android.widget.CompoundButton;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.TextView;
@@ -48,7 +42,6 @@ import org.apache.http.util.EntityUtils;
 
 import java.io.ByteArrayOutputStream;
 import java.io.File;
-import java.io.IOException;
 import java.util.ArrayList;
 
 public class SettingsActivity extends AppCompatActivity {
@@ -84,8 +77,8 @@ public class SettingsActivity extends AppCompatActivity {
 
         Server_URL = getResources().getString(R.string.Server_URL);
 
-        URL = Server_URL+"members_profile_imgs/gym_nation_upload_member_profile_img_api.php";
-        URL_update_profile_img = Server_URL+"gym_nation_update_member_profile_img_url.php";
+        URL = Server_URL+"members_profile_imgs/fyta_upload_member_profile_img_api.php";
+        URL_update_profile_img = Server_URL+"fyta_update_member_profile_img_url.php";
 
 
 
@@ -324,8 +317,8 @@ public class SettingsActivity extends AppCompatActivity {
         protected String doInBackground(Void... params) {
 
             String rfid = user_rfid_local_database();
-            String gymname = gym_name().replaceAll("\\s+","");
-            String img_name =gymname+rfid.replaceAll("\\s+","");
+            String fytaname = fyta_name().replaceAll("\\s+","");
+            String img_name =fytaname+rfid.replaceAll("\\s+","");
             img_name.replaceAll("\\s+","");
 
 
@@ -348,7 +341,7 @@ public class SettingsActivity extends AppCompatActivity {
             String new_img_url = "members_profile_imgs/"+img_name + ".png";
 
             ArrayList<NameValuePair> update_memper_profile_img = new ArrayList<NameValuePair>();
-            update_memper_profile_img.add(new BasicNameValuePair("gymname", gym_database_name()));
+            update_memper_profile_img.add(new BasicNameValuePair("fytaname", fyta_database_name()));
             update_memper_profile_img.add(new BasicNameValuePair("rfid",rfid ));
             update_memper_profile_img.add(new BasicNameValuePair("profile_img_new_url",new_img_url ));
             try {
@@ -382,35 +375,20 @@ public class SettingsActivity extends AppCompatActivity {
 
     }
 
-    public String gym_name(){
- //    Cursor c = dataBaseConnction.query_user_data("gym_info_local_database",null,null,null,null,null,null);
- //    c.moveToPosition(0);
- //    String gym_url = c.getString(1);
+    public String fyta_name(){
         return "prof" ;
     }
 
-    public String gym_database_name(){
-   //    Cursor c = dataBaseConnction.query_user_data("gym_info_local_database",null,null,null,null,null,null);
-   //    c.moveToPosition(0);
-   //    String gym_url = c.getString(3);
+    public String fyta_database_name(){
         return "FYTA" ;
     }
 
     public String user_rfid_local_database(){
- //      Cursor c = dataBaseConnction.query_user_data("member_rfid_local_database",null,null,null,null,null,null);
- //      c.moveToPosition(0);
- //      String rfid = c.getString(1);
         return "_9" ;
     }
 
 
     public void show_profile_img_and_name_localdatabase(){
-   //     Cursor c = dataBaseConnction.query_user_data("member_data",null,null,null,null,null,null);
-   //     c.moveToPosition(0);
-   //
-
-
-     //   txtv_member_name.setText("");
 
 
         Glide.with(getApplicationContext())
