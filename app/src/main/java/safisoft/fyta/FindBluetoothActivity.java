@@ -72,7 +72,6 @@ public class FindBluetoothActivity extends AppCompatActivity {
         mBluetoothAdapter = BluetoothAdapter.getDefaultAdapter();
 
 
-        //if bluetooth is not enabled then create Intent for user to turn it on
         if(mBluetoothAdapter != null &&!mBluetoothAdapter.isEnabled()){
             Intent enableBTIntent = new Intent(BluetoothAdapter.ACTION_REQUEST_ENABLE);
             startActivityForResult(enableBTIntent, REQUEST_ENABLE_BT);

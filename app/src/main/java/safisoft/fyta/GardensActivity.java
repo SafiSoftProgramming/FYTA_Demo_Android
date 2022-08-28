@@ -80,20 +80,6 @@ public class GardensActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_gardens);
 
-  //      dataBaseConnction = new DataBaseConnction(getApplicationContext());
-  //      try {
-  //          dataBaseConnction.createDataBase();
-  //      } catch (IOException ioe) {
-  //          throw new Error("Unable to create database");
-  //      }
-  //      try {
-  //          dataBaseConnction.openDataBase();
-  //      } catch (SQLException sqle) {
-  //          throw sqle;
-  //      }
-  //
-  //
-
 
         Server_URL = getResources().getString(R.string.Server_URL);
         URL_NOTIFICATION = getResources().getString(R.string.URL_gardens);

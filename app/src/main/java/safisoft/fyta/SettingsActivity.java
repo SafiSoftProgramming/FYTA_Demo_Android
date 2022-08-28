@@ -48,12 +48,8 @@ public class SettingsActivity extends AppCompatActivity {
 
     String Server_URL ;
 
-    ImageView status ;
-    ImageView settings ;
-    ImageView home ;
-    ImageView workout ;
+
     ImageView btn_pick_img ;
-    ImageView member_and_plan ;
     ImageButton btn_login_demo ;
     TextView txtv_member_name ;
 
@@ -120,14 +116,9 @@ public class SettingsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (ContextCompat.checkSelfPermission(SettingsActivity.this, Manifest.permission.WRITE_EXTERNAL_STORAGE)!= PackageManager.PERMISSION_GRANTED) {
-                    // Permission is not granted
                     if (ActivityCompat.shouldShowRequestPermissionRationale(SettingsActivity.this,
                             Manifest.permission.WRITE_EXTERNAL_STORAGE)) {
-                        // Show an explanation to the user *asynchronously* -- don't block
-                        // this thread waiting for the user's response! After the user
-                        // sees the explanation, try again to request the permission.
                     } else {
-                        // No explanation needed; request the permission
                         ActivityCompat.requestPermissions(SettingsActivity.this,
                                 new String[]{Manifest.permission.WRITE_EXTERNAL_STORAGE}, 1);
                     }
@@ -270,7 +261,6 @@ public class SettingsActivity extends AppCompatActivity {
    @Override
    protected void onActivityResult(int requestCode, int resultCode, Intent data) {
 
-       // handle result of CropImageActivity
        super.onActivityResult(requestCode, resultCode, data);
        if (requestCode == CropImage.CROP_IMAGE_ACTIVITY_REQUEST_CODE) {
            CropImage.ActivityResult result = CropImage.getActivityResult(data);
@@ -293,15 +283,13 @@ public class SettingsActivity extends AppCompatActivity {
         Bitmap bm = BitmapFactory.decodeFile(img_path,options);
         ByteArrayOutputStream baos = new ByteArrayOutputStream();
         bm.compress(Bitmap.CompressFormat.JPEG,30,baos);
-        // bitmap object
 
-        // bm = Bitmap.createScaledBitmap(bm, 1000, 1000, false);
 
 
         byte[] byteImage_photo = baos.toByteArray();
-        //generate base64 string of image
+
         encodedImage = Base64.encodeToString(byteImage_photo,Base64.DEFAULT);
-        // Upload image to server
+
         new uploadToServer().execute();
     }
 

@@ -43,13 +43,13 @@ public class NotificationAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
             imgv_massage_icon = itemView.findViewById(R.id.imgv_massage_icon);
             imgv_show_more_text = itemView.findViewById(R.id.imgv_show_more_text);
 
-            // on item click
+
             imgv_show_more_text.setOnClickListener(new View.OnClickListener(){
                 @Override
                 public void onClick(View v) {
-                    // get position
+
                     int pos = getAdapterPosition();
-                    // check if item still exists
+
                     if(pos != RecyclerView.NO_POSITION){
                         ViewGroup.LayoutParams params = txtv_massage_body.getLayoutParams();
                         params.height = ViewGroup.LayoutParams.WRAP_CONTENT;

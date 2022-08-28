@@ -47,7 +47,7 @@ import java.util.List;
 
 public class LibraryActivity extends AppCompatActivity {
 
-    private static LibraryActivity instance;  //run from adapter 1 of 3
+    private static LibraryActivity instance;
 
 
     LottieAnimationView gifTextView_conn_status ;
@@ -74,25 +74,13 @@ public class LibraryActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_library);
 
-        instance = this ; //run from adapter 2 of 3
+        instance = this ;
 
 
         Server_URL = getResources().getString(R.string.Server_URL);
         URL_LIBRARY = getResources().getString(R.string.URL_library);
 
 
- //      dataBaseConnction = new DataBaseConnction(getApplicationContext());
- //      try {
- //          dataBaseConnction.createDataBase();
- //      } catch (IOException ioe) {
- //          throw new Error("Unable to create database");
- //      }
- //      try {
- //          dataBaseConnction.openDataBase();
- //      } catch (SQLException sqle) {
- //          throw sqle;
- //      }
- //
         gifTextView_conn_status =findViewById(R.id.gifTextView_conn_status);
         img_loading_pic = findViewById(R.id.img_loading_pic);
         txtv_loading_info = findViewById(R.id.txtv_loading_info);
@@ -129,12 +117,6 @@ public class LibraryActivity extends AppCompatActivity {
         loadadpost();
 
 
-    //    LoginInfoDialog loginInfoDialog ;
-   //     loginInfoDialog = new LoginInfoDialog(LibraryActivity.this);
-   //     loginInfoDialog.show();
-    //    loginInfoDialog.setCanceledOnTouchOutside(true);
-    //    loginInfoDialog.getWindow().setBackgroundDrawableResource(android.R.color.transparent);
-
 
 
         edittext_search_library.addTextChangedListener(new TextWatcher() {
@@ -162,7 +144,7 @@ public class LibraryActivity extends AppCompatActivity {
                     visb = false ;
                 } else if (dy < 0 && visb == false) {
                     if(linearLayout_activity_control.getParent() != null) {
-                        ((ViewGroup)linearLayout_activity_control.getParent()).removeView(linearLayout_activity_control); // <- fix
+                        ((ViewGroup)linearLayout_activity_control.getParent()).removeView(linearLayout_activity_control);
                     }
                     main_notification_layout.addView(linearLayout_activity_control);
                     visb = true ;
@@ -329,7 +311,7 @@ public class LibraryActivity extends AppCompatActivity {
                     }
                 });
 
-        //adding our stringrequest to queue
+
         Volley.newRequestQueue(this).add(stringRequest);
     }
 
