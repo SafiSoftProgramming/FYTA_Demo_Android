@@ -32,7 +32,7 @@
                 android:orientation="horizontal">
 
                 <ImageView
-                    android:layout_width="80dp"
+                    android:layout_width="60dp"
                     android:layout_height="20dp"
                     android:layout_marginStart="5dp"
                     android:src="@drawable/ic_logo" />
@@ -366,7 +366,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA BEAM"
+                        android:text="FLOS Sensor"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -555,7 +555,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA BEAM – 3ER PLANT LOVER BUNDLE"
+                        android:text="FLOS Sensor – 3ER PLANT LOVER BUNDLE"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -567,7 +567,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="You want all your plants to be healthy and happy? Order three FYTA Beams at once . A soil pH kit is included free of charge. "
+                        android:text="You want all your plants to be healthy and happy? Order three FLOS Sensor at once . A soil pH kit is included free of charge. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -746,7 +746,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA BEAM – PLANT LOVER BUNDLE OF 5"
+                        android:text="FLOS Sensor – PLANT LOVER BUNDLE OF 5"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -758,7 +758,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="You want all your plants to be healthy and happy, and want to know how your plants are doing when you're out and about? Order our Plant Lover Bundle with five FYTA Beams and a Wi-Fi Hub . A soil pH kit is included free of charge. "
+                        android:text="You want all your plants to be healthy and happy, and want to know how your plants are doing when you're out and about? Order our Plant Lover Bundle with five FLOS Sensor and a Wi-Fi Hub . A soil pH kit is included free of charge. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -937,7 +937,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA BEAM - PLANT LOVER BUNDLE OF 10"
+                        android:text="FLOS Sensor - PLANT LOVER BUNDLE OF 10"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -949,7 +949,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="You want all your plants to be healthy and happy, and want to know how your plants are doing when you're out and about? Order our Plant Nerd Bundle with 10 FYTA Beams for different plant sizes . The bundle comes with a Wi-Fi hub . And a soil pH kit is included for free. "
+                        android:text="You want all your plants to be healthy and happy, and want to know how your plants are doing when you're out and about? Order our Plant Nerd Bundle with 10 FLOS Sensor for different plant sizes . The bundle comes with a Wi-Fi hub . And a soil pH kit is included for free. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -1128,7 +1128,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA WIFI HUB"
+                        android:text="FLOS WIFI HUB"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -1140,7 +1140,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="The FYTA WiFi Hub is an optional extension of the FYTA Beam System. Read all about the advantages of a FYTA WiFi Hub in the product description. "
+                        android:text="The FLOS WiFi Hub is an optional extension of the FLOS Sensor System. Read all about the advantages of a FLOS WiFi Hub in the product description. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -1319,7 +1319,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="FYTA BEAM GROUND BARS"
+                        android:text="FLOS Sensor GROUND BARS"
                         android:textColor="@color/black"
                         android:textSize="18sp"
                         android:textStyle="bold" />
@@ -1331,7 +1331,7 @@
                         android:gravity="start"
                         android:layout_marginStart="20dp"
                         android:layout_marginEnd="20dp"
-                        android:text="The FYTA Beam delivers the best measurement results when the ground bars are adjusted to the plant size or root length. "
+                        android:text="The FLOS Sensor delivers the best measurement results when the ground bars are adjusted to the plant size or root length. "
                         android:textColor="@color/black"
                         android:textSize="14sp"
                         android:textStyle="bold" />
@@ -1646,10 +1646,10 @@ Je nachdem wie du gießt oder düngst, verändert sich der Wert: Eine regelmäß
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/gifTextView_ic_bluetooth"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="-13dp"
-                    android:layout_marginStart="6dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-33dp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/ic_dot_splash" />

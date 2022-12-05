@@ -100,7 +100,7 @@ public class FindBluetoothActivity extends AppCompatActivity {
 
             public void onFinish() {
 
-                txtv_info.setText("Something Went Wrong Make Sure Your FYTA BEAM Is In Pairing Mode To Connect");
+                txtv_info.setText("Something Went Wrong Make Sure Your FLOS Sensor Is In Pairing Mode To Connect");
                 txtv_try.setText("Try again");
                 lottie_connect_face.setAnimation(R.raw.ic_sensor_face_sad);
                 lottie_connect_face.playAnimation();
@@ -126,7 +126,7 @@ public class FindBluetoothActivity extends AppCompatActivity {
                     countDownTimer.start();
                 }catch (Exception e){
 
-                    txtv_info.setText("Something Went Wrong Make Sure Your FYTA BEAM Is In Pairing Mode To Connect");
+                    txtv_info.setText("Something Went Wrong Make Sure Your FLOS Sensor Is In Pairing Mode To Connect");
                     txtv_try.setText("Try again");
                     lottie_connect_face.setAnimation(R.raw.ic_sensor_face_sad);
                     lottie_connect_face.playAnimation();

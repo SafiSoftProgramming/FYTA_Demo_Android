@@ -226,7 +226,7 @@
                 android:textColor="@color/black"
                 android:textSize="14sp"
                 android:textStyle="bold"
-                android:text="Beams"
+                android:text="Sensors"
                 android:gravity="center"
                 android:layout_gravity="center"/>
         </LinearLayout>

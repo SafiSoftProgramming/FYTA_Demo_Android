@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">FYTA</string>
+    <string name="app_name">FLOS</string>
 
     <string name="scanner_error_message">can\'t scann</string>
     <string name="Server_URL">http://safisoft.net/fyta/</string>

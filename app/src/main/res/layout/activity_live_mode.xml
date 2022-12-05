@@ -760,10 +760,10 @@
 
                 <com.airbnb.lottie.LottieAnimationView
                     android:id="@+id/gifTextView_ic_bluetooth"
-                    android:layout_width="10dp"
-                    android:layout_height="10dp"
-                    android:layout_marginTop="-13dp"
-                    android:layout_marginStart="6dp"
+                    android:layout_width="25dp"
+                    android:layout_height="25dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="-33dp"
                     app:lottie_autoPlay="true"
                     app:lottie_loop="true"
                     app:lottie_rawRes="@raw/ic_dot_splash" />

@@ -43,15 +43,15 @@
             android:layout_width="128dp"
             android:layout_height="80dp"
             android:layout_marginTop="10dp"
-            android:elevation="1dp"
+            android:elevation="-1dp"
             android:src="@drawable/ic_fyta_splash_text" />
 
         <com.airbnb.lottie.LottieAnimationView
             android:id="@+id/gifTextView_ic_bluetooth"
-            android:layout_width="12dp"
-            android:layout_height="12dp"
-            android:layout_marginStart="-18dp"
-            android:layout_marginTop="-35dp"
+            android:layout_width="35dp"
+            android:layout_height="35dp"
+            android:layout_marginStart="13dp"
+            android:layout_marginTop="-58dp"
             app:lottie_autoPlay="true"
             app:lottie_loop="true"
             app:lottie_rawRes="@raw/ic_dot_splash" />
@@ -63,7 +63,7 @@
                     android:layout_marginTop="40dp"
                     android:layout_marginEnd="20dp"
                     android:gravity="center"
-                    android:text="For the FYTA App to function properly, you must accept a few user permissions."
+                    android:text="For the FLOS App to function properly, you must accept a few user permissions."
                     android:textAlignment="center"
                     android:textColor="@color/black"
                     android:textSize="16sp"
